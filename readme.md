@@ -1,0 +1,4 @@
+- 在 package.json 里配置 bin 属性，可以运行自定义命令行
+  - 文件顶部`#! /usr/bin/env node`的意思是：使用 node 运行该文件
+  - 执行`npm link`链接自定义命令行
+  - `npx my-webpack`即可运行`bin/my-webpack.js`文件
