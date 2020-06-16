@@ -10,6 +10,8 @@ let config = require(path.resolve('webpack.config.js'))
 let Compiler = require('../lib/Compiler.js')
 let compiler = new Compiler(config)
 
+// 生命周期
+compiler.hooks.entryOption.call()
 // 标识运行编译
 compiler.run()
 // console.log(__dirname, process.cwd())
